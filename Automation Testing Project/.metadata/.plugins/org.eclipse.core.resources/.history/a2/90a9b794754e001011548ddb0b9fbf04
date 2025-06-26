@@ -1,0 +1,21 @@
+package tutorialsInJava.register;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_RF_003 {
+	
+	WebDriver driver = new ChromeDriver();
+	
+	//global wait
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+	//open browser 
+	driver.manage().window().maximize();
+	
+	driver.get()
+	
+	
+
+}
