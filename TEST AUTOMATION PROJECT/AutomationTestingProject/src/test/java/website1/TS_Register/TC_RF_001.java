@@ -1,7 +1,4 @@
 package website1.TS_Register;
-
-//import javax.swing.JOptionPane;
-
 import java.time.Duration;
 import java.util.Date;
 
@@ -19,10 +16,10 @@ public class TC_RF_001 {
 		 
 		WebDriver driver = new ChromeDriver();
 		//if element is not found on the application page
-		//not more than 15 seconds
+		//don't wait more than 15 seconds
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
-		//JOptionPane.showInputDialog("give me something");
+		
 		driver.get("https://tutorialsninja.com/demo/");
 		
 		driver.findElement(By.xpath("//span[text()='My Account']")).click();
@@ -56,8 +53,6 @@ public class TC_RF_001 {
 		
 		//verifying we are on the Account page once we have clicked on the continue button
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
-		
-		//Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		
 		driver.quit();
 		

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-12T18:38:27 SAST" name="Default suite" finished-at="2025-07-12T18:38:39 SAST" duration-ms="12006">
+  <suite started-at="2025-07-24T13:27:35 SAST" name="Default suite" finished-at="2025-07-24T13:28:21 SAST" duration-ms="45857">
     <groups>
     </groups>
-    <test started-at="2025-07-12T18:38:27 SAST" name="Default test" finished-at="2025-07-12T18:38:39 SAST" duration-ms="12006">
-      <class name="website1.TS_Register.TC_RF_001">
-        <test-method signature="verifyRegisteringWithMandatoryFields()[pri:0, instance:website1.TS_Register.TC_RF_001@7b36aa0c]" started-at="2025-07-12T18:38:27 SAST" name="verifyRegisteringWithMandatoryFields" finished-at="2025-07-12T18:38:39 SAST" duration-ms="11923" status="PASS">
+    <test started-at="2025-07-24T13:27:35 SAST" name="Default test" finished-at="2025-07-24T13:28:21 SAST" duration-ms="45857">
+      <class name="website1.TS_Register.TC_RF_002">
+        <test-method signature="VerifyingEmail()[pri:0, instance:website1.TS_Register.TC_RF_002@45099dd3]" started-at="2025-07-24T13:27:35 SAST" name="VerifyingEmail" finished-at="2025-07-24T13:28:21 SAST" duration-ms="45774" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegisteringWithMandatoryFields -->
-      </class> <!-- website1.TS_Register.TC_RF_001 -->
+        </test-method> <!-- VerifyingEmail -->
+      </class> <!-- website1.TS_Register.TC_RF_002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
