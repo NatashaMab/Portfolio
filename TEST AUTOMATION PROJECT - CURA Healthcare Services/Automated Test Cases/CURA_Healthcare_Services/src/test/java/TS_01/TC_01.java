@@ -51,5 +51,8 @@ public class TC_01 {
 		 Assert.assertTrue(appointmentsection.isDisplayed());
 		 Assert.assertTrue(logoutlink.isDisplayed());
 		 
+		 // trying to get my commits to work
+		 
+		 
 	}
 }
