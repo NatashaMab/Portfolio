@@ -39,6 +39,7 @@ public class TC_02 {
 	 Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"login\"]/div/div/div[1]/p[2]")).getText(), expectedLoginErr);
 	 
 	 //I am trying to configure my Github again
+	 //Trying to configure Github again
 	 
 	}
 }
