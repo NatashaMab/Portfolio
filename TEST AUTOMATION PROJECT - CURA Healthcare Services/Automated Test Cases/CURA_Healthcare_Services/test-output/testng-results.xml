@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-23T12:05:16 SAST" name="Default suite" finished-at="2025-07-23T12:05:35 SAST" duration-ms="18677">
+  <suite started-at="2025-10-09T11:37:28 SAST" name="Default suite" finished-at="2025-10-09T11:37:42 SAST" duration-ms="13709">
     <groups>
     </groups>
-    <test started-at="2025-07-23T12:05:16 SAST" name="Default test" finished-at="2025-07-23T12:05:35 SAST" duration-ms="18677">
+    <test started-at="2025-10-09T11:37:28 SAST" name="Default test" finished-at="2025-10-09T11:37:42 SAST" duration-ms="13709">
       <class name="TS_01.TC_01">
-        <test-method signature="LoginValidation()[pri:0, instance:TS_01.TC_01@4a883b15]" started-at="2025-07-23T12:05:16 SAST" name="LoginValidation" finished-at="2025-07-23T12:05:35 SAST" duration-ms="18633" status="PASS">
+        <test-method signature="LoginValidation()[pri:0, instance:TS_01.TC_01@25641d39]" started-at="2025-10-09T11:37:28 SAST" name="LoginValidation" finished-at="2025-10-09T11:37:42 SAST" duration-ms="13671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginValidation -->
