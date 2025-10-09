@@ -110,6 +110,7 @@ public class TC_04 {
 			
 			// Use JavaScript to get the native validation message
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        
 	        String message = (String) js.executeScript("return arguments[0].validationMessage;", dateField);
 	        
 	        Assert.assertEquals(message, "Please fill out this field.");
