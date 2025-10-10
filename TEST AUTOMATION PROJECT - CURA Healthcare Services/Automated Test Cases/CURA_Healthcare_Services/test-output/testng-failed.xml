@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TS_02.TC_04">
+      <class name="TS_02.TC_05">
         <methods>
-          <include name="appointmentNoManditoryFields"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="appointmentWithNoFields"/>
         </methods>
-      </class> <!-- TS_02.TC_04 -->
+      </class> <!-- TS_02.TC_05 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

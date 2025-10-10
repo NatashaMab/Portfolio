@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-09T11:37:28 SAST" name="Default suite" finished-at="2025-10-09T11:37:42 SAST" duration-ms="13709">
+  <suite started-at="2025-10-10T09:49:50 SAST" name="Default suite" finished-at="2025-10-10T09:50:01 SAST" duration-ms="11750">
     <groups>
     </groups>
-    <test started-at="2025-10-09T11:37:28 SAST" name="Default test" finished-at="2025-10-09T11:37:42 SAST" duration-ms="13709">
-      <class name="TS_01.TC_01">
-        <test-method signature="LoginValidation()[pri:0, instance:TS_01.TC_01@25641d39]" started-at="2025-10-09T11:37:28 SAST" name="LoginValidation" finished-at="2025-10-09T11:37:42 SAST" duration-ms="13671" status="PASS">
+    <test started-at="2025-10-10T09:49:50 SAST" name="Default test" finished-at="2025-10-10T09:50:01 SAST" duration-ms="11750">
+      <class name="TS_02.TC_05">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_02.TC_05@2794eab6]" started-at="2025-10-10T09:49:50 SAST" name="setUp" finished-at="2025-10-10T09:49:58 SAST" duration-ms="8353" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginValidation -->
-      </class> <!-- TS_01.TC_01 -->
+        </test-method> <!-- setUp -->
+        <test-method signature="appointmentWithNoFields()[pri:0, instance:TS_02.TC_05@2794eab6]" started-at="2025-10-10T09:49:58 SAST" name="appointmentWithNoFields" finished-at="2025-10-10T09:50:01 SAST" duration-ms="3310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentWithNoFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_02.TC_05@2794eab6]" started-at="2025-10-10T09:50:01 SAST" name="tearDown" finished-at="2025-10-10T09:50:01 SAST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_02.TC_05 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

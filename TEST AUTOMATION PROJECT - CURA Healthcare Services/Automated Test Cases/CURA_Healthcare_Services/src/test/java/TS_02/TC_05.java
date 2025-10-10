@@ -15,25 +15,27 @@ import org.testng.annotations.Test;
 public class TC_05 {
 	
 	WebDriver driver;
-	
+	preConditions helper;
 	
 	@BeforeMethod
 	public void setUp(){
 		
-		driver = new ChromeDriver();
-		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		
-		driver.get("https://katalon-demo-cura.herokuapp.com/");
-		
+		// Setup WebDriver
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://katalon-demo-cura.herokuapp.com/");
+        
+        // Create helper (passing driver)
+        helper = new preConditions(driver);
+	
 	}
 	
 	@Test
 	public void appointmentWithNoFields(){
 		
 		//Login Pre-Condtion
-		preConditions.LoginPreCondition(driver,"John Doe","ThisIsNotAPassword");
+		helper.LoginPreCondition("John Doe","ThisIsNotAPassword");
 		
 		/*we refresh the page so we can retrieve the button to make the appointment
 		  after we have refreshed the page when we login.
@@ -41,27 +43,32 @@ public class TC_05 {
 		driver.navigate().refresh();
 		
 		//retrieve the button again
-		WebElement makeAppointmentButton = driver.findElement(By.xpath("//*[@id='btn-make-appointment']"));
+		//WebElement makeAppointmentButton = driver.findElement(By.xpath("//*[@id='btn-make-appointment']"));
 		
 		//click the button
-		makeAppointmentButton.click();
+		//makeAppointmentButton.click();
+		
+		helper.clickMakeAppointment();
 		
 		//No filling in of any fields
 		
 		//clicking the 'Book Appointment' button 
-		driver.findElement(By.xpath("//*[@id=\\\"btn-book-appointment\\\"]")).click();
+		//driver.findElement(By.xpath("//*[@id=\"btn-book-appointment\"]")).click();
 		
-		//VALIDATION
+		helper.clickBookAppointment();
 		
 		//get the date field
 		
-		WebElement dateField = driver.findElement(By.xpath("//*[@id=\"txt_visit_date\"]"));
+		//WebElement dateField = driver.findElement(By.xpath("//*[@id=\"txt_visit_date\"]"));
 		
 		// Use JavaScript to get the native validation message
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
         
-        String message = (String) js.executeScript("return arguments[0].validationMessage;", dateField);
+        //String message = (String) js.executeScript("return arguments[0].validationMessage;", dateField);
         
+    	//VALIDATION
+        //Test Logic
+		String message = helper.getValidationMessage();
         Assert.assertEquals(message, "Please fill out this field.");
 	}
 	
