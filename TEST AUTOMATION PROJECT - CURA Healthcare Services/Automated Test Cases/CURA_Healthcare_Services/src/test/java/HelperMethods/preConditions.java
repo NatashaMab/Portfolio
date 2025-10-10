@@ -1,12 +1,10 @@
-package TS_02;
-
-import java.time.Duration;
+package HelperMethods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 /*This is my helper class that will handle SET-UP logic
 -properties (variables)
