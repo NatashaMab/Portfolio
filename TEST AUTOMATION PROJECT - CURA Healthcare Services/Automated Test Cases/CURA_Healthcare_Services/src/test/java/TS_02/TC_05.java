@@ -44,17 +44,16 @@ public class TC_05 {
 		driver.navigate().refresh();
 		
 				
-		helper.clickMakeAppointment();
-		
+		helper.submitClick(helper.getBtnMakeAppointment());
+
 		//No filling in of any fields
 		
-		helper.clickBookAppointment();
-		
-		
+		helper.submitClick(helper.getBtnBook());
+
     	//VALIDATION
         //Test Logic
 		String message = helper.getValidationMessage();
-        Assert.assertEquals(message, "Please fill out this field.");
+        Assert.assertEquals(message, "Please fill out this field.", "All fields have not been filled in");
 	}
 	
 	@AfterMethod
