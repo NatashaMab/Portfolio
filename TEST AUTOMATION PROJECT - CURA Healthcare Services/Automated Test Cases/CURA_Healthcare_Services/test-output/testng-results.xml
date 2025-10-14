@@ -1,54 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-13T16:11:58 SAST" name="Default suite" finished-at="2025-10-13T16:12:11 SAST" duration-ms="12280">
+  <suite started-at="2025-10-14T13:29:05 SAST" name="Default suite" finished-at="2025-10-14T13:30:05 SAST" duration-ms="59474">
     <groups>
     </groups>
-    <test started-at="2025-10-13T16:11:58 SAST" name="Default test" finished-at="2025-10-13T16:12:11 SAST" duration-ms="12280">
-      <class name="TS_04.TC_09">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_04.TC_09@2794eab6]" started-at="2025-10-13T16:11:58 SAST" name="setUp" finished-at="2025-10-13T16:12:06 SAST" duration-ms="7172" status="PASS">
+    <test started-at="2025-10-14T13:29:05 SAST" name="Default test" finished-at="2025-10-14T13:30:05 SAST" duration-ms="59474">
+      <class name="TS_01.TC_02">
+        <test-method signature="LoginValidation()[pri:0, instance:TS_01.TC_02@6d4d66d2]" started-at="2025-10-14T13:29:05 SAST" name="LoginValidation" finished-at="2025-10-14T13:29:13 SAST" duration-ms="7298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidation -->
+      </class> <!-- TS_01.TC_02 -->
+      <class name="TS_01.TC_01">
+        <test-method signature="LoginValidation()[pri:0, instance:TS_01.TC_01@470734c3]" started-at="2025-10-14T13:29:13 SAST" name="LoginValidation" finished-at="2025-10-14T13:29:18 SAST" duration-ms="5926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidation -->
+      </class> <!-- TS_01.TC_01 -->
+      <class name="TS_04.TC_08">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_04.TC_08@173ed316]" started-at="2025-10-14T13:29:18 SAST" name="setUp" finished-at="2025-10-14T13:29:23 SAST" duration-ms="4159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logoutFunctionality()[pri:0, instance:TS_04.TC_09@2794eab6]" started-at="2025-10-13T16:12:06 SAST" name="logoutFunctionality" finished-at="2025-10-13T16:12:11 SAST" duration-ms="5001" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="profileFunctionalityCorrectDisplay()[pri:0, instance:TS_04.TC_08@173ed316]" started-at="2025-10-14T13:29:23 SAST" name="profileFunctionalityCorrectDisplay" finished-at="2025-10-14T13:29:25 SAST" duration-ms="1961" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (1645, 195)
-  (Session info: chrome=140.0.7339.208)
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df1ebc2f8cbdffb2d27ff5f06bcb9ce, clickElement {id=f.75D663D3007783E86DD7EA8900D071E5.d.D238A4EFBEE0EB0FE59CB5136BC72D7C.e.481}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\mabai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62031/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0df1ebc2f8cbdffb2d27ff5f06bcb9ce)] -> xpath: //*[@id="sidebar-wrapper"]/ul/li[5]/a]
-Session ID: 0df1ebc2f8cbdffb2d27ff5f06bcb9ce]]>
+              <![CDATA[The following asserts failed:
+Text 'John Doe' not found on page! expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1645, 195)
-  (Session info: chrome=140.0.7339.208)
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df1ebc2f8cbdffb2d27ff5f06bcb9ce, clickElement {id=f.75D663D3007783E86DD7EA8900D071E5.d.D238A4EFBEE0EB0FE59CB5136BC72D7C.e.481}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\mabai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62031/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0df1ebc2f8cbdffb2d27ff5f06bcb9ce)] -> xpath: //*[@id="sidebar-wrapper"]/ul/li[5]/a]
-Session ID: 0df1ebc2f8cbdffb2d27ff5f06bcb9ce
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at TS_04.TC_09.logoutFunctionality(TC_09.java:62)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Text 'John Doe' not found on page! expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at TS_04.TC_08.profileFunctionalityCorrectDisplay(TC_08.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,15 +65,99 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileFunctionalityCorrectDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_04.TC_08@173ed316]" started-at="2025-10-14T13:29:25 SAST" name="tearDown" finished-at="2025-10-14T13:29:25 SAST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_04.TC_08 -->
+      <class name="TS_04.TC_09">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_04.TC_09@28261e8e]" started-at="2025-10-14T13:29:25 SAST" name="setUp" finished-at="2025-10-14T13:29:29 SAST" duration-ms="4559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutFunctionality()[pri:0, instance:TS_04.TC_09@28261e8e]" started-at="2025-10-14T13:29:29 SAST" name="logoutFunctionality" finished-at="2025-10-14T13:29:32 SAST" duration-ms="2223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_04.TC_09@2794eab6]" started-at="2025-10-13T16:12:11 SAST" name="tearDown" finished-at="2025-10-13T16:12:11 SAST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_04.TC_09@28261e8e]" started-at="2025-10-14T13:29:32 SAST" name="tearDown" finished-at="2025-10-14T13:29:32 SAST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TS_04.TC_09 -->
+      <class name="TS_02.TC_04">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_02.TC_04@d737b89]" started-at="2025-10-14T13:29:32 SAST" name="setUp" finished-at="2025-10-14T13:29:36 SAST" duration-ms="3857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="appointmentNoManditoryFields()[pri:0, instance:TS_02.TC_04@d737b89]" started-at="2025-10-14T13:29:36 SAST" name="appointmentNoManditoryFields" finished-at="2025-10-14T13:29:38 SAST" duration-ms="2101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentNoManditoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_02.TC_04@d737b89]" started-at="2025-10-14T13:29:38 SAST" name="tearDown" finished-at="2025-10-14T13:29:38 SAST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_02.TC_04 -->
+      <class name="TS_02.TC_05">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_02.TC_05@8519cb4]" started-at="2025-10-14T13:29:38 SAST" name="setUp" finished-at="2025-10-14T13:29:42 SAST" duration-ms="4390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="appointmentWithNoFields()[pri:0, instance:TS_02.TC_05@8519cb4]" started-at="2025-10-14T13:29:42 SAST" name="appointmentWithNoFields" finished-at="2025-10-14T13:29:44 SAST" duration-ms="1588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentWithNoFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_02.TC_05@8519cb4]" started-at="2025-10-14T13:29:44 SAST" name="tearDown" finished-at="2025-10-14T13:29:44 SAST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_02.TC_05 -->
+      <class name="TS_03.TC_07">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_03.TC_07@35dab4eb]" started-at="2025-10-14T13:29:44 SAST" name="setUp" finished-at="2025-10-14T13:29:48 SAST" duration-ms="4052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="historyFunctionalityWithPriorBookings()[pri:0, instance:TS_03.TC_07@35dab4eb]" started-at="2025-10-14T13:29:48 SAST" name="historyFunctionalityWithPriorBookings" finished-at="2025-10-14T13:29:52 SAST" duration-ms="3391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- historyFunctionalityWithPriorBookings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_03.TC_07@35dab4eb]" started-at="2025-10-14T13:29:52 SAST" name="tearDown" finished-at="2025-10-14T13:29:52 SAST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_03.TC_07 -->
+      <class name="TS_02.TC_03">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_02.TC_03@2d901eb0]" started-at="2025-10-14T13:29:52 SAST" name="setUp" finished-at="2025-10-14T13:29:56 SAST" duration-ms="3843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="appointmentWithMandatoryFields()[pri:0, instance:TS_02.TC_03@2d901eb0]" started-at="2025-10-14T13:29:56 SAST" name="appointmentWithMandatoryFields" finished-at="2025-10-14T13:29:58 SAST" duration-ms="2348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentWithMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_02.TC_03@2d901eb0]" started-at="2025-10-14T13:29:58 SAST" name="tearDown" finished-at="2025-10-14T13:29:58 SAST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_02.TC_03 -->
+      <class name="TS_03.TC_06">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TS_03.TC_06@3ba987b8]" started-at="2025-10-14T13:29:58 SAST" name="setUp" finished-at="2025-10-14T13:30:02 SAST" duration-ms="4021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="historyFunctionalityWithNoPriorBookings()[pri:0, instance:TS_03.TC_06@3ba987b8]" started-at="2025-10-14T13:30:02 SAST" name="historyFunctionalityWithNoPriorBookings" finished-at="2025-10-14T13:30:04 SAST" duration-ms="2152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- historyFunctionalityWithNoPriorBookings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TS_03.TC_06@3ba987b8]" started-at="2025-10-14T13:30:04 SAST" name="tearDown" finished-at="2025-10-14T13:30:05 SAST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TS_03.TC_06 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

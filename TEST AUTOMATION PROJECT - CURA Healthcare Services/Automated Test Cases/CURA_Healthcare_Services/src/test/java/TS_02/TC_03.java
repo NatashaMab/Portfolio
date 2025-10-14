@@ -14,6 +14,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+//Make an appointment with all MANDATORY FIELDS filled in.
+
 public class TC_03 {
 
 	WebDriver driver;
@@ -51,17 +53,14 @@ public class TC_03 {
 		
 		driver.findElement(By.xpath("//*[@id=\"btn-login\"]")).click();
 		
-		/*String expectedError = "Login failed! Please ensure the username and password are valid.";
-		String actualError = driver.findElement(By.xpath("//*[@id=\"login\"]/div/div/div[1]/p[2]")).getText();
-		Assert.assertEquals(actualError, expectedError,"Invalid password or username was given");*/
-		
 		waitURL("https://katalon-demo-cura.herokuapp.com/#appointment",10);
 		
 		//check that we are redirected to the make appointment page
 		Assert.assertEquals(driver.getCurrentUrl(), "https://katalon-demo-cura.herokuapp.com/#appointment","User was not redirected to the appoinment page");
 		
 		//fill in mandatory fields - date 
-		//will need to create a random date generator for dates that are above the current date
+		//using a random date generator to generate dates ahead of the current date 
+		
 		String providedDate = getFutureDate(2);
 		driver.findElement(By.xpath("//*[@id=\"txt_visit_date\"]")).sendKeys(providedDate);
 		
@@ -71,8 +70,10 @@ public class TC_03 {
 		/* 
 		 * Redirection to 'Appointment Confirmation' page.     
 		 * Display of the correct date on  'Appoinment Confirmation' page.
-		 * */
+		 */
 		waitURL("https://katalon-demo-cura.herokuapp.com/appointment.php#summary",10);
+		
+		//VALIDATION
 		
 		Assert.assertEquals(driver.getCurrentUrl(), "https://katalon-demo-cura.herokuapp.com/appointment.php#summary","User was not directed to the summary page");
 		

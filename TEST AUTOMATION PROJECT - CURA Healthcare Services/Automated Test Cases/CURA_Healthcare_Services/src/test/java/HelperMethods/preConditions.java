@@ -43,7 +43,6 @@ public class preConditions {
 	By f_dropdown = By.id("combo_facility");
 	By f_checkbox = By.id("chk_hospotal_readmission");
 	
-	
 	//menu
 	By m_menu = By.xpath("//*[@id=\"menu-toggle\"]");
 	By m_home = By.xpath("//*[@id=\"sidebar-wrapper\"]/ul/li[2]/a");
@@ -107,6 +106,10 @@ public class preConditions {
 		public By getM_logout() {
 			return m_logout;
 		}
+		
+		public By getM_login() {
+			return m_login;
+		}
 
 	
 	//NAVIGATION
@@ -126,7 +129,7 @@ public class preConditions {
 	//CLICKING BUTTONS - SUBMITTING INFORMATION
 	public void submitClick(By button) {
 		
-		driver.navigate().refresh();
+		//driver.navigate().refresh();
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
@@ -136,7 +139,7 @@ public class preConditions {
 		
 	}
 	
-	
+
 	//LOGIN
 	public void LoginPreCondition(String Username, String password) {
 		
@@ -199,6 +202,10 @@ public class preConditions {
 		String providedDate = getFutureDate(2);
 		
 		driver.findElement(f_dateField).sendKeys(providedDate);
+	
+	//Comment
+		
+		driver.findElement(f_comment).sendKeys(comment);
 		
 		return providedDate;
 	}

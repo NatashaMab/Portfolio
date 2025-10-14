@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Default test(failed)(failed)</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Default test(failed)(failed)</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 14 13:29:05 SAST 2025</td>
+<td>Started on:</td><td>Tue Oct 14 13:12:11 SAST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59474 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22223 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,39 +79,10 @@ function toggleAllBoxes() {
 <td title='TS_04.TC_08.profileFunctionalityCorrectDisplay()'><b>profileFunctionalityCorrectDisplay</b><br>Test class: TS_04.TC_08</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	Text &apos;John Doe&apos; not found on page! expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at TS_04.TC_08.profileFunctionalityCorrectDisplay(TC_08.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1476812556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1476812556'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657125852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657125852'><pre>java.lang.AssertionError: The following asserts failed:
 	Text &apos;John Doe&apos; not found on page! expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
@@ -145,57 +116,50 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>TS_04.TC_08@173ed316</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TS_03.TC_06.historyFunctionalityWithNoPriorBookings()'><b>historyFunctionalityWithNoPriorBookings</b><br>Test class: TS_03.TC_06</td>
-<td></td>
 <td>2</td>
-<td>TS_03.TC_06@3ba987b8</td></tr>
-<tr>
-<td title='TS_01.TC_01.LoginValidation()'><b>LoginValidation</b><br>Test class: TS_01.TC_01</td>
-<td></td>
-<td>5</td>
-<td>TS_01.TC_01@470734c3</td></tr>
-<tr>
-<td title='TS_04.TC_09.logoutFunctionality()'><b>logoutFunctionality</b><br>Test class: TS_04.TC_09</td>
-<td></td>
-<td>2</td>
-<td>TS_04.TC_09@28261e8e</td></tr>
-<tr>
-<td title='TS_02.TC_04.appointmentNoManditoryFields()'><b>appointmentNoManditoryFields</b><br>Test class: TS_02.TC_04</td>
-<td></td>
-<td>2</td>
-<td>TS_02.TC_04@d737b89</td></tr>
-<tr>
-<td title='TS_02.TC_03.appointmentWithMandatoryFields()'><b>appointmentWithMandatoryFields</b><br>Test class: TS_02.TC_03</td>
-<td></td>
-<td>2</td>
-<td>TS_02.TC_03@2d901eb0</td></tr>
+<td>TS_04.TC_08@6c1a5b54</td></tr>
 <tr>
 <td title='TS_03.TC_07.historyFunctionalityWithPriorBookings()'><b>historyFunctionalityWithPriorBookings</b><br>Test class: TS_03.TC_07</td>
-<td></td>
+<td><div><pre>java.lang.AssertionError: Text not found on the page! expected [true] but found [false]
+	at TS_03.TC_07.historyFunctionalityWithPriorBookings(TC_07.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340789130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace340789130'><pre>java.lang.AssertionError: Text not found on the page! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at TS_03.TC_07.historyFunctionalityWithPriorBookings(TC_07.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>3</td>
-<td>TS_03.TC_07@35dab4eb</td></tr>
-<tr>
-<td title='TS_02.TC_05.appointmentWithNoFields()'><b>appointmentWithNoFields</b><br>Test class: TS_02.TC_05</td>
-<td></td>
-<td>1</td>
-<td>TS_02.TC_05@8519cb4</td></tr>
-<tr>
-<td title='TS_01.TC_02.LoginValidation()'><b>LoginValidation</b><br>Test class: TS_01.TC_02</td>
-<td></td>
-<td>7</td>
-<td>TS_01.TC_02@6d4d66d2</td></tr>
+<td>TS_03.TC_07@202b0582</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,15 +1,22 @@
 package TS_03;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import HelperMethods.preConditions;
+
+//History functionality - with PRIOR APPOINTMENTS booked.
 
 public class TC_07 {
 	
@@ -19,7 +26,20 @@ public class TC_07 {
 	@BeforeMethod
 	public void setUp() {
 		
-		driver = new ChromeDriver();
+ChromeOptions options = new ChromeOptions();
+		
+		options.addArguments("--start-maximized");
+		options.addArguments("--disable-save-password-bubble");
+		options.addArguments("--disable-notifications");
+		options.addArguments("--incognito");
+
+		Map<String, Object> prefs = new HashMap<>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		options.setExperimentalOption("prefs", prefs);
+		
+		driver = new ChromeDriver(options);
+		
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -45,12 +65,13 @@ public class TC_07 {
 		
 		String pageSource = driver.getPageSource();
 		
-        Assert.assertTrue(pageSource.contains(providedDate), "Text not found on the page!");
+       Assert.assertTrue(pageSource.contains(providedDate), "Text not found on the page!");
 	}
 	
 	@AfterMethod()
 	public void tearDown() {
 		
+		driver.quit();
 	}
 
 }

@@ -14,6 +14,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+//Make an appointment with MANDATORY FIELDS NOT filled in.
+
 public class TC_04 {
 	
 	WebDriver driver;
@@ -30,7 +32,6 @@ public class TC_04 {
 		 driver.get("https://katalon-demo-cura.herokuapp.com/");
 		 
 	}
-	
 	
 	@Test
 	
@@ -52,7 +53,7 @@ public class TC_04 {
 			WebElement bookButton = driver.findElement(By.xpath("//*[@id='btn-make-appointment']"));
 			bookButton.click();
 			
-			//driver.findElement(By.xpath("//*[@id=\"btn-make-appointment\"]")).click();
+		//driver.findElement(By.xpath("//*[@id=\"btn-make-appointment\"]")).click();
 			
 		//Filling in non-mandatory fields
 		
@@ -75,22 +76,6 @@ public class TC_04 {
 				
 			    checkbox.click();
 			}
-			
-		//Field - HEALTHCARE PROGRAM 
-			
-			/*List<WebElement> healthCareProgram = driver.findElements(By.xpath("\"//input[@name='programs']\""));
-			
-			for(WebElement hcp : healthCareProgram) {
-				
-				//String value = hcp.getDomProperty("value");
-				String value = hcp.getAttribute("value");
-				
-			    if (value != null && value.equalsIgnoreCase("Medicare")) {
-			        hcp.click();
-			        break;
-			        
-			    }
-			}*/
 			
 			driver.findElement(By.id("radio_program_medicaid")).click();
 			

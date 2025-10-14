@@ -13,6 +13,8 @@ import org.testng.asserts.SoftAssert;
 
 import HelperMethods.preConditions;
 
+//Profile functionality - correct display
+
 public class TC_08 {
 	
 	WebDriver driver;
@@ -50,6 +52,7 @@ public class TC_08 {
 		
         // Both assertions will run
         softAssert.assertTrue(pageSource.contains("John Doe"), "Text 'John Doe' not found on page!");
+        
         softAssert.assertTrue(button.isDisplayed(), "The logout button is not displayed");
 
         // This tells TestNG to report all collected assertion results

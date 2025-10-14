@@ -13,6 +13,8 @@ import org.testng.annotations.Test;
 
 import HelperMethods.preConditions;
 
+//Make an appointment with no fields filled in.
+
 public class TC_05 {
 	
 	WebDriver driver;
@@ -43,7 +45,6 @@ public class TC_05 {
 		*/
 		driver.navigate().refresh();
 		
-				
 		helper.submitClick(helper.getBtnMakeAppointment());
 
 		//No filling in of any fields
@@ -53,6 +54,7 @@ public class TC_05 {
     	//VALIDATION
         //Test Logic
 		String message = helper.getValidationMessage();
+		
         Assert.assertEquals(message, "Please fill out this field.", "All fields have not been filled in");
 	}
 	

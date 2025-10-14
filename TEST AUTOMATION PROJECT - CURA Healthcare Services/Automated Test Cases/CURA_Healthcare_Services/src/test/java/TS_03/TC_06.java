@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 import HelperMethods.preConditions;
 
+//History functionality - with 'NO PRIOR APPOINTMENTS booked.
+
 public class TC_06 {
 	
 	WebDriver driver;

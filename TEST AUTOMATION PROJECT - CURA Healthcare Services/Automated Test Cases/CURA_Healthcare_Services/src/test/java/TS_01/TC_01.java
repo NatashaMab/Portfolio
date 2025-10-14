@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+//Login with CORRECT LOGIN details
+
 public class TC_01 {
 @Test
 
@@ -49,8 +51,10 @@ public class TC_01 {
 		 WebElement logoutlink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"sidebar-wrapper\"]/ul/li[5]/a")));
 			
 		 Assert.assertTrue(appointmentsection.isDisplayed());
+		 
 		 Assert.assertTrue(logoutlink.isDisplayed());
 		 
+		 driver.quit();
 		 
 	}
 }
