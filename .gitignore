@@ -2,3 +2,9 @@
 /AutomationTestingProject/
 ~$*.xlsx
 
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/
