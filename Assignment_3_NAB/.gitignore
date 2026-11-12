@@ -1,4 +1,23 @@
 /.metadata/
 /AutomationTestingProject/
 ~$*.xlsx
+target/
+*.class
+# Maven generated files
+target/
 
+# Java compiled files
+*.class
+
+# IDE settings
+.idea/
+.settings/
+.classpath
+.project
+*.iml
+
+# Temporary Excel files
+~$*.xlsx
+
+# Test reports
+test-output/
